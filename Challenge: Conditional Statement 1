@@ -1,0 +1,52 @@
+#include <stdio.h>
+int main()
+{
+	printf("Enter your marks here : ");
+	int marks=0;
+	scanf("%d", &marks);
+	if(marks>=85 && marks<100)
+	{
+		printf("Congratulations! You have secured: Grade A. \nKeep up the good work!");
+	}
+	if(marks==100)
+	{
+		printf("You've secured the maximum possible marks! Grade A. \nNow your future looks bright! :)");
+	}
+	if(marks>70 && marks<84)
+	{
+		printf("Wow!You managed to secure: Grade B \nKeep working hard or you'll be irrelevant! :)");
+	}
+	if(marks==84)
+	{
+		printf("You secured Grade B! \nCongralutions! You were unlucky enough to score one mark less than required to get a perfect grade! :)");
+	}
+	if(marks>55 && marks<69)
+	{
+		printf("Amazing! You ended up with Grade C! \nA few marks less and you'd be thrown out of our house!");
+	}
+	if(marks==69)
+	{
+		printf("Nice! You secured Grade C! \nYou were unlucky enough to score one mark less than required to get Grade B! \nYou must feel proud of yourself! :)");
+	}
+	if(marks>40 && marks<54)
+	{
+		printf("Good lord! You ended up with Grade D! \nIt's almost time to drop out my friend! :)");
+	}
+	if(marks==54)
+	{
+		printf("Wow! You ended up with Grade D! \nJust one mark more and you'd feel better about your miserable self :)");
+	}
+	if(marks==40)
+	{
+		printf("Great Job! You ended up with Grade D! \nYour parent must be proud of you! If they haven't disowned you already :) ");
+	}
+	if(marks<40 && marks>0)
+	{
+		printf("Sorry friend! You ended up with Grade F \nYou're are completely worthless! Don't bother trying again! :)");
+	}
+	if(marks==0)
+	{
+		printf("Great job! You secured Grade F! \nYour name would be remembered for years to come! :)");
+	}
+	return 0;
+}
