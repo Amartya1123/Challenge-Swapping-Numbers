@@ -1,0 +1,28 @@
+#include <stdio.h>
+void main()
+{
+	printf("Hi! Welcome to Chillies! \nWhat can I get you today? \nChoose an option from 1-5 for a surprise order! : \n1. \n2. \n3. \n4. \n5.");
+	int choice=0;
+	scanf("%d", &choice);
+	switch(choice)
+	{
+		case 1:
+			printf("Food item :Pasta \n Rs. 179/- only");
+			break;
+		case 2:
+			printf("Food item :Pizza \n Rs.239/- only");
+			break;
+	    case 3:
+	    	printf("Food item :French Fries \n Rs.99/- only");
+	    	break;
+	    case 4:
+	    	printf("Food item :Sandwich \n Rs.149/- only");
+	    	break;
+	    case 5:
+	    	printf("Food item :No. 15 Burger King Foot Lettuce \n Rs.129/- only \n Offer Available Till Stocks Last!");
+	    	break;
+	    default:
+	    	printf("Sorry food machine broke. Try picking a valid option next time :)");
+		}	
+	
+}
